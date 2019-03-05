@@ -1,7 +1,8 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
 
-import logo from './logo.svg';
-import './App.css';
+import logo from '../img/logo.svg';
+import '../styles/App.css';
 
 const App = () => (
   <div className="app">
@@ -16,4 +17,5 @@ const App = () => (
     </main>
   </div>
 );
-export default App;
+
+export default hot(module)(App);

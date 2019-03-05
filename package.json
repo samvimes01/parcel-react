@@ -10,7 +10,7 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel src/index.html --open",
+    "start": "cross-env NODE_ENV=development parcel src/index.html -p 3000 --open",
     "prebuild": "rmdir dist /s /q",
     "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url https://samvimes01.github.io/my-awesome-app/",
     "predeploy": "npm run build",
@@ -41,6 +41,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
     "gh-pages": "^2.0.1",
-    "parcel-bundler": "^1.11.0"
+    "parcel-bundler": "^1.11.0",
+    "react-hot-loader": "^4.7.2"
   }
 }
